@@ -1,0 +1,164 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("./assets/font/Poppins-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("./assets/font/Poppins-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: PMontserrAT;
+    src: url("./assets/font/Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    width: 600px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.header {
+    height: 80px;
+    padding: 19px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    padding: 0px 24px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+.content__title {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 0px;
+}
+
+.cards__item {
+    padding: 32px 8px 16px 8px;
+    width: 276px;
+    height: 436px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards__img {
+    max-width: 260px;
+    max-height: 260px;
+    overflow: hidden;
+    border-radius: 7px;
+    margin-bottom: 17px;
+}
+
+.cards__name {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cards__price {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    color: #489DFF;
+    margin-bottom: 22px;
+}
+
+.cards__button {
+    width: 131px;
+    outline: none;
+    border-radius: 7px;
+    background-color: #489DFF;
+    color: #ffffff;
+    padding: 16px 0px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.cards__button:hover{
+    background-color: #6db1ff;
+}
+
+.cards__button:focus{
+    background-color: #2580e9;
+}
+
+.cards__button:active{
+    background-color: #489DFF;
+}
+
+
+.footer {
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 552px;
+    gap: 16px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    color: #525F7F;
+}
+
+.footer__mail_post {
+    color: #489DFF;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+
+.rectangle {
+    height: 1px;
+    width: 552px;
+    background-color: #f3f3f3;
+}
